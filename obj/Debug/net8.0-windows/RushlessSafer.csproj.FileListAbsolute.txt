@@ -24,11 +24,6 @@ D:\Hasil Coding\ExamApp\frontend\RushlessSafer\obj\Debug\net8.0-windows\ref\Rush
 D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
-D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\RushlessSafer.exe
-D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\RushlessSafer.deps.json
-D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\RushlessSafer.runtimeconfig.json
-D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\RushlessSafer.dll
-D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\RushlessSafer.pdb
 D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
 D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
 D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
@@ -39,8 +34,13 @@ D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\RushlessSafer.AssemblyInf
 D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\RushlessSafer.csproj.CoreCompileInputs.cache
 D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\RushlessSafer.sourcelink.json
 D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\Rushless.44626B39.Up2Date
-D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\RushlessSafer.dll
-D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\refint\RushlessSafer.dll
-D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\RushlessSafer.pdb
 D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\RushlessSafer.genruntimeconfig.cache
-D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\ref\RushlessSafer.dll
+D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Rushless Safer.exe
+D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Rushless Safer.deps.json
+D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Rushless Safer.runtimeconfig.json
+D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Rushless Safer.dll
+D:\Hasil Coding\RushlessSafer\bin\Debug\net8.0-windows\Rushless Safer.pdb
+D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\Rushless Safer.dll
+D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\refint\Rushless Safer.dll
+D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\Rushless Safer.pdb
+D:\Hasil Coding\RushlessSafer\obj\Debug\net8.0-windows\ref\Rushless Safer.dll
