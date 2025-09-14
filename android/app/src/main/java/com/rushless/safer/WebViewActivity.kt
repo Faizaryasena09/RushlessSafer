@@ -30,6 +30,11 @@ class WebViewActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true // Needed for some websites
 
+        // Set custom user agent
+        val defaultUserAgent = webView.settings.userAgentString
+        val customUserAgent = "$defaultUserAgent ExamBrowser/1.0"
+        webView.settings.userAgentString = customUserAgent
+
         // Enable cookies
         CookieManager.getInstance().setAcceptCookie(true)
 
@@ -41,7 +46,7 @@ class WebViewActivity : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 // Keep the app open as long as we're on a /courses/x/do page
-                if (url != null && url.contains("/courses/") && url.contains("/do")) {
+                if (url != null && (url.contains("/courses/") && url.contains("/do"))) {
                     // We're on the right page, keep the app open
                 } else {
                     // Optionally handle navigation away from the exam page
