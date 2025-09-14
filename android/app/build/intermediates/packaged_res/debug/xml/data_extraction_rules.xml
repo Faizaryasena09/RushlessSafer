@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!--
+        All files and directories within the domain are backed up, except those
+        that match the exclude patterns.
+        -->
+        <include domain="sharedpref" />
+        <include domain="database" />
+        <exclude domain="file" path="." />
+        <exclude domain="root" path="." />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <!--
+        All files and directories within the domain are transferred, except those
+        that match the exclude patterns.
+        -->
+        <include domain="sharedpref" />
+        <include domain="database" />
+        <exclude domain="file" path="." />
+        <exclude domain="root" path="." />
+        <exclude domain="external" path="." />
+    </device-transfer>
+</data-extraction-rules>

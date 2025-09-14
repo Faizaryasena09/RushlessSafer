@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!--
+    This file is used by Android's Auto Backup feature.
+    You can use it to specify which files and directories to include or exclude from backups.
+    By default, most of the app's data is backed up.
+    See https://developer.android.com/guide/topics/data/autobackup for more information.
+    -->
+</full-backup-content>
