@@ -12,6 +12,8 @@ id message_text
 id webview
 layout activity_main
 layout activity_manual
+mipmap ic_launcher
+mipmap ic_launcher_round
 string app_name
 style Theme.RushlessAndroidSafer
 style Theme.RushlessAndroidSafer.Night

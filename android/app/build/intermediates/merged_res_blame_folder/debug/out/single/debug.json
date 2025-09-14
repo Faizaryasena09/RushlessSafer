@@ -1,10 +1,18 @@
 [
     {
-        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/layout_activity_manual.xml.flat",
-        "source": "com.example.rushlessandroidsafer.app-main-33:/layout/activity_manual.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\layout_activity_manual.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\layout\\activity_manual.xml"
     },
     {
-        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "com.example.rushlessandroidsafer.app-main-33:/layout/activity_main.xml"
+        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.example.rushlessandroidsafer.app-main-33:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.rushlessandroidsafer.app-main-33:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\layout\\activity_main.xml"
     }
 ]
