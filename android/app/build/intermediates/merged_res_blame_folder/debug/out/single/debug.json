@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/layout_activity_manual.xml.flat",
+        "source": "com.example.rushlessandroidsafer.app-main-33:/layout/activity_manual.xml"
+    },
+    {
+        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.example.rushlessandroidsafer.app-main-33:/layout/activity_main.xml"
+    }
+]
