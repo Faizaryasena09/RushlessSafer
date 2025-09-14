@@ -1,5 +1,9 @@
 package com.example.rushlessandroidsafer
 
+import android.content.BroadcastReceiver
+import android.content.IntentFilter
+import android.os.BatteryManager
+import android.provider.Settings
 import android.util.Log
 
 import android.app.admin.DevicePolicyManager
@@ -15,6 +19,7 @@ import android.webkit.WebChromeClient
 import android.webkit.WebViewClient
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.net.URLDecoder
@@ -27,6 +32,7 @@ import org.json.JSONObject
 class MainActivity : AppCompatActivity() {
 
     private var examInProgress = false
+    private var batteryStatusReceiver: BroadcastReceiver? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             setContentView(R.layout.activity_main)
             val webView: WebView = findViewById(R.id.webview)
             val unlockButton: Button = findViewById(R.id.unlock_button)
+            val batteryStatusText: TextView = findViewById(R.id.battery_status_text)
+            val networkSettingsButton: Button = findViewById(R.id.network_settings_button)
 
             webView.webViewClient = object : WebViewClient() {
                 override fun onPageFinished(view: WebView?, url: String?) {
@@ -43,8 +51,10 @@ class MainActivity : AppCompatActivity() {
                     url?.let {
                         if (it.contains("/courses/") && it.contains("/do")) {
                             unlockButton.visibility = View.GONE
+                            // networkSettingsButton.visibility = View.GONE // Keep visible
                         } else {
                             unlockButton.visibility = View.VISIBLE
+                            // networkSettingsButton.visibility = View.VISIBLE // Already visible
                         }
                     }
                 }
@@ -55,6 +65,26 @@ class MainActivity : AppCompatActivity() {
             webView.addJavascriptInterface(WebAppInterface(this), "Android")
 
             unlockButton.setOnClickListener { unlock() }
+            networkSettingsButton.setOnClickListener { 
+                startActivity(Intent(Settings.ACTION_WIFI_SETTINGS))
+            }
+
+            // Register battery receiver
+            batteryStatusReceiver = object : BroadcastReceiver() {
+                override fun onReceive(context: Context?, intent: Intent?) {
+                    val level: Int = intent?.getIntExtra(BatteryManager.EXTRA_LEVEL, -1) ?: -1
+                    val scale: Int = intent?.getIntExtra(BatteryManager.EXTRA_SCALE, -1) ?: -1
+                    val batteryPct: Float = level / scale.toFloat() * 100
+
+                    val status: Int = intent?.getIntExtra(BatteryManager.EXTRA_STATUS, -1) ?: -1
+                    val isCharging: Boolean = status == BatteryManager.BATTERY_STATUS_CHARGING ||
+                            status == BatteryManager.BATTERY_STATUS_FULL
+
+                    batteryStatusText.text = "Battery: ${batteryPct.toInt()}% " + if (isCharging) "(Charging)" else ""
+                }
+            }
+            val ifilter = IntentFilter(Intent.ACTION_BATTERY_CHANGED)
+            registerReceiver(batteryStatusReceiver, ifilter)
 
             val data: Uri? = intent.data
             val url = data?.getQueryParameter("url")
@@ -79,6 +109,11 @@ class MainActivity : AppCompatActivity() {
         } else {
             setContentView(R.layout.activity_manual)
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        batteryStatusReceiver?.let { unregisterReceiver(it) }
     }
 
     override fun onStart() {

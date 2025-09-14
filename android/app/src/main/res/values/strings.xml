@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Rushless Android Safer</string>
+    <string name="manual_launch_message">Buka aplikasi web untuk memulai ujian</string>
+    <string name="network_settings_description">Open Network Settings</string>
 </resources>

@@ -1345,6 +1345,7 @@ color abc_tint_edittext
 color abc_tint_seek_thumb
 color abc_tint_spinner
 color abc_tint_switch_track
+color accentColor
 color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
@@ -1360,6 +1361,8 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color buttonColor
+color buttonTextColor
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1410,6 +1413,8 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color footerBackground
+color footerText
 color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
@@ -2040,6 +2045,8 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color primaryColor
+color primaryDarkColor
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2065,6 +2072,8 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color teal_200
 color teal_700
+color textColorPrimary
+color textColorSecondary
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -2958,6 +2967,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_back_black_24
+drawable ic_battery
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -2969,6 +2979,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable ic_wifi
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3041,6 +3052,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_button_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3133,11 +3145,13 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseline
+id battery_status_text
 id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
 id bottom
+id bottom_bar
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3351,6 +3365,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id network_settings_button
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3802,6 +3817,7 @@ string m3_sys_motion_easing_linear
 string m3_sys_motion_easing_standard
 string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
+string manual_launch_message
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_24h_suffix
@@ -3886,6 +3902,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string network_settings_description
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

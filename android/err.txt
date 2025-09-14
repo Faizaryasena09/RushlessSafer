@@ -1,6 +1,1 @@
-Uncaught runtime errors:
-×
-ERROR
-Cannot read properties of null (reading 'getItem')
-TypeError: Cannot read properties of null (reading 'getItem')
-    at http://10.0.2.2:3000/static/js/bundle
+e: file:///D:/Hasil%20Coding/RushlessSafer/android/app/src/main/java/com/example/rushlessandroidsafer/MainActivity.kt:71:40 Unresolved reference: BroadcastReceiver
