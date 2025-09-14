@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\rushless-safer]
+@="URL:Rushless Safer Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\rushless-safer\shell\open\command]
+@="D:\\Hasil Coding\\ExamApp\\frontend\\RushlessSafer\\bin\\Debug\\net8.0-windows\\RushlessSafer.exe" "%1"
