@@ -9,6 +9,7 @@ color teal_700
 color white
 id logo_image
 id message_text
+id unlock_button
 id webview
 layout activity_main
 layout activity_manual

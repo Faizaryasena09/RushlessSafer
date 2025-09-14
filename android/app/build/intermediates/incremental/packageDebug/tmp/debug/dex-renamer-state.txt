@@ -1,4 +1,4 @@
-#Sun Sep 14 10:58:58 WIB 2025
+#Sun Sep 14 11:39:30 WIB 2025
 base.0=D\:\\Hasil Coding\\RushlessSafer\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\Hasil Coding\\RushlessSafer\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=D\:\\Hasil Coding\\RushlessSafer\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex

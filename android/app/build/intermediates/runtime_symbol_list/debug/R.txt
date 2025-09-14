@@ -3519,6 +3519,7 @@ int id triangle 0x7f0801d8
 int id unchecked 0x7f0801d9
 int id uniform 0x7f0801da
 int id unlabeled 0x7f0801db
+int id unlock_button 0x7f0801f1
 int id up 0x7f0801dc
 int id useLogo 0x7f0801dd
 int id vertical_only 0x7f0801de
