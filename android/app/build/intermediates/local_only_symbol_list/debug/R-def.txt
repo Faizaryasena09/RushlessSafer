@@ -17,3 +17,4 @@ mipmap ic_launcher_round
 string app_name
 style Theme.RushlessAndroidSafer
 style Theme.RushlessAndroidSafer.Night
+xml device_admin_receiver

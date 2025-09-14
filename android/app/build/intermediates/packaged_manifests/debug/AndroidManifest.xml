@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.RushlessAndroidSafer" >
+        android:theme="@style/Theme.RushlessAndroidSafer"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.rushlessandroidsafer.MainActivity"
             android:exported="true"
@@ -46,6 +47,19 @@
                 <data android:scheme="rushless-safer" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name="com.example.rushlessandroidsafer.MyDeviceAdminReceiver"
+            android:exported="true"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_receiver" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name="androidx.startup.InitializationProvider"

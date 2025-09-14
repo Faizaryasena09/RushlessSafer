@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LENOVO\.gradle\caches\8.12\transforms\449e1f6e727fd08f9b10f80f03c38519\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO\.gradle\caches\8.12\transforms\c7444161da338612f7e3d129cc776f00\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\LENOVO\.gradle\caches\8.12\transforms\b0b432d9a72c40f3b211e7e47de6b703\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -60,8 +60,8 @@ ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:7:5-30:19
-INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:7:5-30:19
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:7:5-43:19
+INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:7:5-43:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LENOVO\.gradle\caches\8.12\transforms\449e1f6e727fd08f9b10f80f03c38519\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LENOVO\.gradle\caches\8.12\transforms\449e1f6e727fd08f9b10f80f03c38519\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\LENOVO\.gradle\caches\8.12\transforms\c7444161da338612f7e3d129cc776f00\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -94,44 +94,66 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\LENOVO\.gradle\cac
 		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:13:9-58
+	android:usesCleartextTraffic
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:14:9-44
 activity#com.example.rushlessandroidsafer.MainActivity
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:14:9-29:20
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:15:9-30:20
 	android:lockTaskMode
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:18:13-50
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:19:13-50
 	android:launchMode
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:17:13-44
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:18:13-44
 	android:exported
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:15:13-41
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:20:13-23:29
 action#android.intent.action.MAIN
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:22:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:rushless-safer
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:23:13-28:29
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:24:13-29:29
 action#android.intent.action.VIEW
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:25:17-76
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:26:17-76
 	android:name
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:25:27-73
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:26:27-73
 category#android.intent.category.BROWSABLE
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:26:17-78
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:27:17-78
 	android:name
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:26:27-75
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:27:27-75
 data
-ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:27:17-57
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:28:17-57
 	android:scheme
-		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:27:23-54
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:28:23-54
+receiver#com.example.rushlessandroidsafer.MyDeviceAdminReceiver
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:32:9-42:20
+	android:exported
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:34:13-70
+	android:name
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:33:13-50
+meta-data#android.app.device_admin
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:36:13-38:65
+	android:resource
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:38:17-62
+	android:name
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:37:17-56
+intent-filter#action:name:android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:39:13-41:29
+action#android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:40:17-82
+	android:name
+		ADDED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:40:25-79
 uses-sdk
 INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml

@@ -1,0 +1,6 @@
+Uncaught runtime errors:
+×
+ERROR
+Cannot read properties of null (reading 'getItem')
+TypeError: Cannot read properties of null (reading 'getItem')
+    at http://10.0.2.2:3000/static/js/bundle
