@@ -1,0 +1,1 @@
+ERROR: D:\Hasil Coding\RushlessSafer\android\app\src\main\AndroidManifest.xml:7:5-41:19: AAPT: error: resource xml/data_extraction_rules (aka com.rushless.safer:xml/data_extraction_rules) not found.

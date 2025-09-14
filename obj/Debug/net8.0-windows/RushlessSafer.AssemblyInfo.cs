@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rushless Safer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a4d471eb427d2a2f4970349d5f9ac9206d9801f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fec66f3f86ee69a6691d176c389f1b42502a8fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rushless Safer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rushless Safer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

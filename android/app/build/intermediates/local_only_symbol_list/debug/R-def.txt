@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+id logoImageView
+id webView
+id welcomeTextView
+layout activity_main
+layout activity_webview

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.rushless.safer.app-merged_res-32:/layout_activity_webview.xml.flat",
+        "source": "com.rushless.safer.app-main-34:/layout/activity_webview.xml"
+    },
+    {
+        "merged": "com.rushless.safer.app-merged_res-32:/layout_activity_main.xml.flat",
+        "source": "com.rushless.safer.app-main-34:/layout/activity_main.xml"
+    }
+]
