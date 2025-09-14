@@ -11,7 +11,7 @@ namespace RushlessSafer
     {
         private readonly string _initialUrl;
         private readonly string _cookies;
-        private KeyboardHook _keyboardHook;
+        private KeyboardHook? _keyboardHook;
 
         public LockdownForm(string url, string cookies)
         {
@@ -115,6 +115,10 @@ namespace RushlessSafer
         {
             await webView.EnsureCoreWebView2Async(null);
 
+            // Set User-Agent
+            var userAgent = webView.CoreWebView2.Settings.UserAgent;
+            webView.CoreWebView2.Settings.UserAgent = userAgent + " ExamBrowser/1.0";
+
             // Handle messages from web content
             webView.CoreWebView2.WebMessageReceived += HandleWebMessage;
 
@@ -150,7 +154,7 @@ namespace RushlessSafer
             Process.Start("explorer.exe");
 
             // Dispose keyboard hook to re-enable normal keyboard function
-            _keyboardHook.Dispose();
+            _keyboardHook?.Dispose();
 
             // Use Application.Exit() for a graceful shutdown
             Application.Exit();

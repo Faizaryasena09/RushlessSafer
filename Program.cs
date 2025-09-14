@@ -20,13 +20,13 @@ namespace RushlessSafer
                 var uri = new Uri(fullArg);
                 var query = HttpUtility.ParseQueryString(uri.Query);
                 
-                if (query["url"] != null)
+                if (query.Get("url") is string urlValue)
                 {
-                    targetUrl = query["url"];
+                    targetUrl = urlValue;
                 }
-                if (query["cookies"] != null)
+                if (query.Get("cookies") is string cookieValue)
                 {
-                    cookies = query["cookies"];
+                    cookies = cookieValue;
                 }
             }
 

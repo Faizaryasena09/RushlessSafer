@@ -22,8 +22,12 @@ public class KeyboardHook : IDisposable
     private static IntPtr SetHook(LowLevelKeyboardProc proc)
     {
         using (Process curProcess = Process.GetCurrentProcess())
-        using (ProcessModule curModule = curProcess.MainModule)
+        using (ProcessModule? curModule = curProcess.MainModule)
         {
+            if (curModule == null)
+            {
+                throw new InvalidOperationException("Cannot get main module of the current process.");
+            }
             return SetWindowsHookEx(WH_KEYBOARD_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
         }
     }
