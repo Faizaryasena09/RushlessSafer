@@ -1,1 +1,0 @@
-ERROR: D:\Hasil Coding\RushlessSafer\android\app\src\main\res\layout\activity_manual.xml:35: AAPT: error: resource string/manual_launch_message (aka com.example.rushlessandroidsafer:string/manual_launch_message) not found.

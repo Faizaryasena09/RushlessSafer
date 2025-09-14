@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">RushlessAndroidSafer</string>
-    <string name="network_settings_description">Network Settings</string>
-    <string name="manual_launch_message">This app is intended to be launched automatically from a web link to start an exam. Please use the link provided by your institution.</string>
-</resources>
