@@ -4,12 +4,16 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/layout_activity_manual.xml.flat",
+        "source": "com.example.rushlessandroidsafer.app-main-33:/layout/activity_manual.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/drawable_ic_wifi.xml.flat",
-        "source": "com.example.rushlessandroidsafer.app-main-33:/drawable/ic_wifi.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\drawable_ic_wifi.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\drawable\\ic_wifi.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\xml_device_admin_receiver.xml.flat",
@@ -36,20 +40,16 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/drawable_ic_battery.xml.flat",
-        "source": "com.example.rushlessandroidsafer.app-main-33:/drawable/ic_battery.xml"
-    },
-    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/layout_activity_main.xml.flat",
-        "source": "com.example.rushlessandroidsafer.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\drawable_ic_battery.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\drawable\\ic_battery.xml"
     },
     {
-        "merged": "com.example.rushlessandroidsafer.app-merged_res-31:/drawable_rounded_button_background.xml.flat",
-        "source": "com.example.rushlessandroidsafer.app-main-33:/drawable/rounded_button_background.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\drawable_rounded_button_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-main-33:\\drawable\\rounded_button_background.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.12\\com.example.rushlessandroidsafer.app-merged_res-31:\\mipmap-xxxhdpi_ic_launcher.png.flat",

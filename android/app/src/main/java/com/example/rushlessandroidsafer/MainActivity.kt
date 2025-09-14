@@ -45,32 +45,40 @@ class MainActivity : AppCompatActivity() {
             val batteryStatusText: TextView = findViewById(R.id.battery_status_text)
             val networkSettingsButton: Button = findViewById(R.id.network_settings_button)
 
-            webView.webViewClient = object : WebViewClient() {
-                override fun onPageFinished(view: WebView?, url: String?) {
-                    super.onPageFinished(view, url)
-                    url?.let {
-                        if (it.contains("/courses/") && it.contains("/do")) {
-                            unlockButton.visibility = View.GONE
-                            // networkSettingsButton.visibility = View.GONE // Keep visible
-                        } else {
-                            unlockButton.visibility = View.VISIBLE
-                            // networkSettingsButton.visibility = View.VISIBLE // Already visible
-                        }
-                    }
-                }
-            }
+            // Setup WebView
             webView.settings.javaScriptEnabled = true
             webView.settings.domStorageEnabled = true
-            webView.settings.userAgentString = webView.settings.userAgentString + " ExamBrowser/1.0"
+            webView.settings.allowFileAccess = true
+            webView.settings.allowContentAccess = true
+            webView.settings.userAgentString = "RushlessSaferAndroid/1.0" // Custom User Agent
             webView.addJavascriptInterface(WebAppInterface(this), "Android")
 
+            webView.webViewClient = object : WebViewClient() {
+                override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
+                    if (url != null) {
+                        view?.loadUrl(url)
+                    }
+                    return true
+                }
+            }
+
+            webView.webChromeClient = object : WebChromeClient() {
+                override fun onCreateWindow(view: WebView, isDialog: Boolean, isUserGesture: Boolean, resultMsg: android.os.Message): Boolean {
+                    val newWebView = WebView(this@MainActivity)
+                    val transport = resultMsg.obj as WebView.WebViewTransport
+                    transport.webView = newWebView
+                    resultMsg.sendToTarget()
+                    return true
+                }
+            }
+
             unlockButton.setOnClickListener { unlock() }
-            networkSettingsButton.setOnClickListener { 
+            networkSettingsButton.setOnClickListener {
                 startActivity(Intent(Settings.ACTION_WIFI_SETTINGS))
             }
 
             // Register battery receiver
-            batteryStatusReceiver = object : BroadcastReceiver() {
+            batteryStatusReceiver = object : android.content.BroadcastReceiver() {
                 override fun onReceive(context: Context?, intent: Intent?) {
                     val level: Int = intent?.getIntExtra(BatteryManager.EXTRA_LEVEL, -1) ?: -1
                     val scale: Int = intent?.getIntExtra(BatteryManager.EXTRA_SCALE, -1) ?: -1
@@ -96,7 +104,6 @@ class MainActivity : AppCompatActivity() {
                     val decodedCookies = URLDecoder.decode(cookies, "UTF-8")
                     val cookieManager = CookieManager.getInstance()
                     cookieManager.setAcceptCookie(true)
-                    // Split cookies and set them individually
                     decodedCookies.split(';').forEach { cookie ->
                         cookieManager.setCookie(decodedUrl, cookie.trim())
                     }
@@ -104,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 webView.loadUrl(decodedUrl)
             } else {
-                // Handle error: URL not found
+                webView.loadData("<html><body><h1>Error: URL not found in Intent.</h1></body></html>", "text/html", "UTF-8")
             }
         } else {
             setContentView(R.layout.activity_manual)
@@ -128,10 +135,10 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Lock task not permitted.", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this, "App is not a device owner.", Toast.LENGTH_SHORT).show()
-                // For testing without device owner, you can start lock task directly.
-                // This will prompt the user for confirmation.
-                startLockTask()
+                // For testing without device owner, you might need to manually enable via ADB.
+                // This toast is a reminder.
+                Toast.makeText(this, "App is not a device owner. Lock task might not work.", Toast.LENGTH_LONG).show()
+                startLockTask() // Attempt to start anyway, may prompt user.
             }
         }
     }

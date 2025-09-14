@@ -8,14 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Custom Colors for Professional UI -->
-    <color name="primaryColor">#4CAF50</color> <!-- Green -->
-    <color name="primaryDarkColor">#388E3C</color>
-    <color name="accentColor">#FFC107</color> <!-- Amber -->
-    <color name="textColorPrimary">#212121</color>
-    <color name="textColorSecondary">#757575</color>
-    <color name="buttonColor">#1976D2</color> <!-- Blue -->
+    <color name="footerBackground">#333333</color>
     <color name="buttonTextColor">#FFFFFF</color>
-    <color name="footerBackground">#F5F5F5</color>
-    <color name="footerText">#616161</color>
+    <color name="footerText">#FFFFFF</color>
 </resources>

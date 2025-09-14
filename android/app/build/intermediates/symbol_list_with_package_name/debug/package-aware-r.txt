@@ -1345,7 +1345,6 @@ color abc_tint_edittext
 color abc_tint_seek_thumb
 color abc_tint_spinner
 color abc_tint_switch_track
-color accentColor
 color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
@@ -1361,7 +1360,6 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color buttonColor
 color buttonTextColor
 color button_material_dark
 color button_material_light
@@ -2045,8 +2043,6 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color primaryColor
-color primaryDarkColor
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -2072,8 +2068,6 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color teal_200
 color teal_700
-color textColorPrimary
-color textColorSecondary
 color tooltip_background_dark
 color tooltip_background_light
 color white
