@@ -3,10 +3,6 @@ namespace RushlessSafer
     partial class LockdownForm
     {
         private System.ComponentModel.IContainer components = null;
-        private Microsoft.Web.WebView2.WinForms.WebView2 webView;
-        private System.Windows.Forms.Timer batteryTimer;
-        private System.Windows.Forms.Label lblBattery;
-        private System.Windows.Forms.Button btnWifi;
 
         protected override void Dispose(bool disposing)
         {
@@ -16,6 +12,8 @@ namespace RushlessSafer
             }
             base.Dispose(disposing);
         }
+
+        #region Windows Form Designer generated code
 
         private void InitializeComponent()
         {
@@ -66,13 +64,22 @@ namespace RushlessSafer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.webView);
+            this.Controls.Add(this.lblBattery);
+            this.Controls.Add(this.btnWifi);
             this.Name = "LockdownForm";
             this.Text = "Rushless Safer";
-            this.Load += new System.EventHandler(this.LockdownForm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LockdownForm_FormClosing);
+            this.Load += new System.EventHandler(this.LockdownForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
+
         }
+
+        #endregion
+
+        private Microsoft.Web.WebView2.WinForms.WebView2 webView;
+        private System.Windows.Forms.Timer batteryTimer;
+        private System.Windows.Forms.Label lblBattery;
+        private System.Windows.Forms.Button btnWifi;
     }
 }

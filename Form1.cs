@@ -13,15 +13,100 @@ namespace RushlessSafer
         private readonly string _cookies;
         private KeyboardHook? _keyboardHook;
 
-        public LockdownForm(string url, string cookies)
+        // UI Elements for manual start screen, created programmatically
+        private Panel? infoPanel;
+        private PictureBox? logoPictureBox;
+        private Label? infoLabel;
+        private Label? copyrightLabel;
+
+        public LockdownForm(string? url, string? cookies)
         {
-            _initialUrl = url;
-            _cookies = cookies;
+            _initialUrl = url ?? "";
+            _cookies = cookies ?? "";
             InitializeComponent();
-            InitializeSecurityFeatures();
-            InitializeWebView();
-            InitializeFooter(); // Add this call
+
+            if (url == null)
+            {
+                // Manual start
+                CreateManualStartScreen();
+            }
+            else
+            {
+                // URL start
+                InitializeSecurityFeatures();
+                InitializeWebView();
+                InitializeFooter();
+            }
         }
+
+        private void CreateManualStartScreen()
+        {
+            // Hide the WebView used for the exam
+            webView.Visible = false;
+
+            // Create and configure the main panel
+            infoPanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.White
+            };
+            this.Controls.Add(infoPanel);
+
+            // Create and configure the PictureBox for the logo
+            logoPictureBox = new PictureBox
+            {
+                Size = new Size(128, 128),
+                SizeMode = PictureBoxSizeMode.Zoom,
+                Anchor = AnchorStyles.None
+            };
+            try
+            {
+                logoPictureBox.Image = Image.FromFile("ruhsless icon.png");
+            }
+            catch (Exception) { /* Image not found, ignore */ }
+            infoPanel.Controls.Add(logoPictureBox);
+
+            // Create and configure the informational label
+            infoLabel = new Label
+            {
+                Text = "Buka web ujian untuk memulai ujian",
+                Font = new Font("Segoe UI", 14F),
+                Size = new Size(400, 30),
+                TextAlign = ContentAlignment.MiddleCenter,
+                Anchor = AnchorStyles.None
+            };
+            infoPanel.Controls.Add(infoLabel);
+
+            // Create and configure the copyright label
+            copyrightLabel = new Label
+            {
+                Text = "© ArsensCreative",
+                Font = new Font("Segoe UI", 10F),
+                Size = new Size(200, 20),
+                TextAlign = ContentAlignment.MiddleCenter,
+                Anchor = AnchorStyles.None
+            };
+            infoPanel.Controls.Add(copyrightLabel);
+
+            // Center controls within the panel
+            CenterControlsInPanel();
+
+            // Add an event handler to recenter controls when the form is resized
+            this.Resize += (sender, e) => CenterControlsInPanel();
+        }
+
+        private void CenterControlsInPanel()
+        {
+            if (infoPanel == null || logoPictureBox == null || infoLabel == null || copyrightLabel == null) return;
+
+            int panelWidth = infoPanel.ClientSize.Width;
+            int panelHeight = infoPanel.ClientSize.Height;
+
+            logoPictureBox.Location = new Point((panelWidth - logoPictureBox.Width) / 2, (panelHeight - logoPictureBox.Height - infoLabel.Height - copyrightLabel.Height - 30) / 2);
+            infoLabel.Location = new Point((panelWidth - infoLabel.Width) / 2, logoPictureBox.Bottom + 20);
+            copyrightLabel.Location = new Point((panelWidth - copyrightLabel.Width) / 2, infoLabel.Bottom + 10);
+        }
+
 
         private async void InitializeFooter()
         {

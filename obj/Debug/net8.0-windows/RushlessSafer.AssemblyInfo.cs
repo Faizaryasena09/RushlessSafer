@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Rushless Safer")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RushlessSafer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+617069c3fc5af9d5b7bbbc05ccb7600cf04450a1")]
-[assembly: System.Reflection.AssemblyProductAttribute("Rushless Safer")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Rushless Safer")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+807fae04b4c0ee7b43ddeb9cda5371f01c134ea5")]
+[assembly: System.Reflection.AssemblyProductAttribute("RushlessSafer")]
+[assembly: System.Reflection.AssemblyTitleAttribute("RushlessSafer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

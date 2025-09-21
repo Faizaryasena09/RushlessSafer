@@ -28,9 +28,13 @@ namespace RushlessSafer
                 {
                     cookies = cookieValue;
                 }
+                Application.Run(new LockdownForm(targetUrl, cookies));
             }
-
-            Application.Run(new LockdownForm(targetUrl, cookies));
+            else
+            {
+                // No arguments, run in manual/info mode
+                Application.Run(new LockdownForm(null, null));
+            }
         }
     }
 }
